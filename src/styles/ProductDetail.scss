@@ -1,0 +1,53 @@
+// ProductDetail.scss
+
+.product-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .product-image {
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+  }
+  
+  .product-title {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .product-image {
+    position: relative;
+    width: 100%;
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-image-zoom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+  
+  .product-image-zoom img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .product-image:hover .product-image-zoom {
+    opacity: 1;
+    pointer-events: initial;
+  }
+  
