@@ -1,7 +1,6 @@
-// types.ts
-export interface Product {
+ export interface Product {
     id: number;
     name: string;
-    // Add other properties as needed
+   
   }
   

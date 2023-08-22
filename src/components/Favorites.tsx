@@ -1,4 +1,4 @@
-// Favorites.tsx
+ 
 import React from 'react';
 
 interface Product {
